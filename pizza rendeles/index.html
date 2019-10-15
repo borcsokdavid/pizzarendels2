@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="stilus.css">
+    <meta charset="utf-8">
+    <title>Pizza rendelés</title>
+</head>
+<body>
+    <form name="urlap">
+        <fieldset>
+            <legend>Pizza rendelés</legend>
+            <fieldset class="regio">
+                    <legend>Összeállítás</legend>
+                    <table id="fajtameret">
+                        <tr><td></td><td><input type="radio" name="type" value="mar">Margaréta</td><td><input type="radio" name="type" value="haw">Hawaii</td><td><input type="radio" name="type" value="hu">Magyaros</td></tr>
+                        <tr><td><input type="radio" name="size" value="small" />Small</td><td>1500Ft</td><td>1650Ft</td><td>1400Ft</td></tr>
+                        <tr><td><input type="radio" name="size" value="medium" />Medium</td><td>1700Ft</td><td>1850Ft</td><td>1600Ft</td></tr>
+                        <tr><td><input type="radio" name="size" value="large" />Large</td><td>1900Ft</td><td>2050Ft</td><td>1800Ft</td></tr>
+                        
+                    </table>
+                    <button type="button" onclick="send()">Send</button>
+                </fieldset>
+            <fieldset class="regio">
+                    <legend>Összesítés</legend>
+                    <div id="rendeles"></div>
+                </fieldset>
+        </fieldset>
+    </form>
+
+
+    <script src="pizza.js"></script>
+</body>
+</html>
